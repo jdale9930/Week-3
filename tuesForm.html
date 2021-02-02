@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .jc-center{
+            justify-content: center;
+        }
+
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container column center">
+            <label for = "username" style = "text-align: center;">Username:</label>
+            <input class = "text" type = "text" id = "username" placeholder = "Username" style = "width: 150px; margin: auto;">
+            <div id = "hidden-U" class = "hidden" style = "text-align: center;">*Username must be between 8-16 characters long*</div>
+            
+            <label for = "password" style = "text-align: center;">Password:</label>
+            <input class = "text" type = "text" id = "password" placeholder = "Password" style = "width: 150px; margin: auto;">
+            <div id = "hidden-P" class = "hidden" style = "text-align: center;">*Password must be between 10-20 characters long*</div>
+
+            <div style = "text-align: center;">How do you feel about this website?</div>
+                <div style = "margin: auto;">
+                    <input type = "radio" value = "love" name = "radioFeel" id = "love">
+                    <label for = "love">Love it!</label>
+                    <input type = "radio" value = "meh" name = "radioFeel" id = "meh">
+                    <label for = "meh">Meh</label>
+                    <input type = "radio" value = "hate" name = "radioFeel" id = "hate">
+                    <label for = "hate">Hate it!</label>
+            </div>
+            <div class = "hidden" style = "text-align: center;">*Please choose an option*</div>
+            <label for = "favoriteFruit" style = "text-align: center;">What's your favorite fruit?</label>
+            <select name = "favoriteFruit" id = "favoriteFruit" style = "width: 150px; margin: auto;;">
+                    <option value = "apple">Apple</option>
+                    <option value = "apple">Banana</option>
+                    <option value = "apple">Orange</option>
+                    <option value = "apple">Grape</option>
+            </select>
+            <div class = "hidden" style = "text-align: center;">*Please pick a fruit*</div>
+
+            <input type = "button" id ="submit" value = "Submit" style = "width: 100px; margin: auto;">
+            <div class = "hidden" style = "text-align: center;">*Please fulfill all the above requirements*</div>
+
+    </div>
+    <script src = "tuesForm.js"></script>
+</body>
+</html>
