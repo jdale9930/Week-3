@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="fetch">Search</button>
+    <div id="output"></div>
+
+<script>
+    let search = '1';
+    document.getElementById("fetch").addEventListener("click" , () =>{
+        fetch(`https://jsonplaceholder.typicode.com/posts/${search}`)
+        .then((response) => response.json())
+        .then((json)=> {
+
+            let search = document.getElementById()
+            // document.getElementById("output").innerHTML = `
+            // <h2>${json.userId}</h2>
+            // <h2>${json.id}</h2>
+            // <p>${json.title}</p>
+            // <p>${json.body}</p>
+            // `;
+        });
+    });
+</script>
+</body>
+</html>
